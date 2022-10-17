@@ -1,1 +1,314 @@
-p
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservasi Kendaraan EAD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        section{padding-top: 30px;
+        padding-left: 5px;}
+        .topnav {
+  overflow: hidden;
+  background-color: rgb(115, 160, 239);
+  border-radius: 0%;
+}
+
+.topnav a {
+  position: relative;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #90a7f5;
+  color: white;
+}
+.column {
+float: left;
+text-align: justify;
+width: 50%;
+padding: 10px;
+padding-top: 20px;
+padding-left: 20px;
+margin-bottom: 20px;
+height: 300px;
+border-radius: 0%;
+}
+input[type=text], select {
+width: 100%;
+padding: 3px 5px;
+margin:8px 0;
+border: 1px solid #ccc;
+display:inline-block;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 12px;
+  resize: none;}
+form{
+    margin-left:250px;
+    padding-left: 50px;
+    margin-right:250px;
+    justify-content: center;
+  }
+  footer {
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(199, 199, 199);
+  color: rgb(0, 0, 0);
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: rgb(135, 135, 135);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <div class="topnav">
+        <img src="C:\Users\User\Downloads\logo-ead.png" style="width:150px;float:left"></li>
+        <a href="#tentang kami">Tentang Kami</a>
+        <a href="#lokasi kami">Lokasi Kami</a>
+        <a href="#jenis mobil">Jenis Mobil</a>
+        <a href="#daftar reservasi">Daftar Reservasi</a>
+    </div>
+    <h2 style="text-align:center; padding-top: 20px;">Reservasi Kendaraan EAD</h2>
+    <p style="text-align:center">Reservasi kendaraan EAD merupakan penyedia jasa rental kendaraan mobil.</p>
+    <iframe style="margin-left: 28%;" width="560" height="315" src="https://www.youtube.com/embed/AwMeQJ_u73I"
+    frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    
+    <a name="tentang kami"><h2 style="text-align:center;padding-top:20px">Tentang Kami</h2></a>
+            <div class="column">
+                <p>EAD menyanjikan layanan sewa mobil di kota Bandung dan kota terdekat di sekitarnya dengan beragam jenis, warna, merk, dan model mobil.
+                    Harga yang ditawarkan juga relatif tergantung dengan berapa hari disewakan, mulai dari Rp.120.000-250.000 per harinya.
+                    Keamanan mobil sewaan juga sudah ditingkatkan dengan tersedianya aplikasi khusus EAD agar pengguna bisa mengakses kunci mobil menggunakan finger print ataupun face id.
+                </p>
+              </div>
+              <div class="col">
+                <p>EAD menyanjikan layanan sewa mobil di kota Bandung dan kota terdekat di sekitarnya dengan beragam jenis, warna, merk, dan model mobil.
+                    Harga yang ditawarkan juga relatif tergantung dengan berapa hari disewakan, mulai dari Rp.120.000-250.000 per harinya.
+                    Keamanan mobil sewaan juga sudah ditingkatkan dengan tersedianya aplikasi khusus EAD agar pengguna bisa mengakses kunci mobil menggunakan finger print ataupun face id.
+                </p>
+            </div>
+
+        <a name="lokasi mu"></a><h2 style="text-align:center;padding-top:20px">Lokasi Kantor Kami</h2></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.0890590215826!2d107.63385862915266!3d-6.967234268483538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e84d420df58b%3A0x63571074f2811ca2!2sJl.%20Adhyaksa%20III%20No.6%2C%20Sukapura%2C%20Kec.%20Dayeuhkolot%2C%20Kabupaten%20Bandung%2C%20Jawa%20Barat%2040267!5e0!3m2!1sen!2sid!4v1665914074630!5m2!1sen!2sid" 
+            width="600" height="450" style="border:0;margin-left: 26%;margin-bottom:20px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <a name="jenis mobil"><h2 style="text-align:center">Jenis Mobil</h2></a>
+            <div class="card">
+                <div class="card body">
+                <p1><img src="C:\Users\User\Downloads\rush.jfif" style="float:left;padding-right:30px;width:250px">
+                <b>Toyota Rush</b>
+                <p>mulai dari IDR 200.000/Hari</p>
+                <ul>
+                    <li>7 kursi</li>
+                    <li>Manual</li>
+                    <li>1500 cc</li>
+                </ul></p1>
+            </div>
+                <div class="card body">
+                <p1><img src="C:\Users\User\Downloads\ayla.jfif" style="float:left;padding-right:30px;width:250px">
+                <b>Toyota Ayla</b>
+                <p>mulai dari IDR 150.000/Hari</p>
+                <ul>
+                    <li>5 kursi</li>
+                    <li>Manual</li>
+                    <li>1200 cc</li>
+                </ul></p1>
+            </div>
+                <div class="card body">
+                <p1><img src="C:\Users\User\Downloads\brio.jfif" style="float:left;padding-right:30px;width:250px">
+                <b>Honda Brio</b>
+                <p>mulai dari IDR 130.000/Hari</p>
+                <ul>
+                    <li>5 kursi</li>
+                    <li>Automatic</li>
+                    <li>1200 cc</li>
+                </ul></p1>
+            </div>
+                <div class="card body">
+                <p1><img src="C:\Users\User\Downloads\download.jfif" style="float:left ;padding:top30px; padding-right:30px; width:250px">
+                <b>Suzuki Ertiga</b>
+                <p>mulai dari IDR 200.000/Hari</p>
+                <ul>
+                    <li>7 kursi</li>
+                    <li>Manual</li>
+                    <li>1500 cc</li>
+                </ul></p1>
+            </div></div>
+
+        <a name="daftar reservasi"><h2 style="text-align:center">Pendaftaran Mobil</h2></a>
+            <form>
+                <label for="email">Email Address</label><br>
+                  <input type="text" id="email_address" name="email">
+                    <br>
+                  <label for="nama">Nama Lengkap</label><br>
+                  <input type="text" id="nama_lengkap" name="nama">
+                    <br>
+                  <label for="nomer">No. HP</label><br>
+                  <input type="text" id="no_hp" name="nomer">
+                  <br>
+                  <p>Alamat</p>
+                  <textarea></textarea><br>
+
+                  <label for="jenis">Jenis Mobil</label><br>
+                  <select id="jenis_mobil" name="jenis">
+                    <option value="Toyota Rush">Toyota Rush</option>
+                    <option value="Toyota Ayla">Toyota Ayla</option>
+                    <option value="Honda Brio">Honda Brio</option>
+                    <option value="Suzuki Ertiga">Suzuki Ertiga</option>
+                  </select>
+                  
+                  <p>Membutuhkan Supir?</p>
+                  <div class="form-group"> 
+                    <input type="radio" id="ya" name="fav_ language" value="Ya">
+                    <label for="Ya">Ya</label>
+                    <input type="radio" id="tidak" name="fav_language" value="Tidak">
+                    <label for="Ya">Tidak</label>
+                </div> <br>
+                  <button type="button" class="btn btn-primary">Pesan</button>
+                  <br>
+                  <br>
+                </form>
+        <footer>
+          <a id="my_Btn">Copyright 2022 (Wihda_1202204276_SI-44-07)</a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Copyright</h2>
+    </div>
+    <div class="modal-body">
+      <p>Nama Lengkap: Wihda Sifwi Hanid</p>
+      <p>NIM: 1202204276</p>
+      <p>Kelas: SI-44-07</p>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+        </footer>
+</body>
+</html>
