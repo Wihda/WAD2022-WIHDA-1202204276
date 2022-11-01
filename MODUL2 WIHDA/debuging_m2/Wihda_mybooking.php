@@ -48,7 +48,7 @@ $service3 = 250000;
             <td><?php echo rand(); ?></td>
             <td><?php echo $_POST["nama"];?></td>
             <td><?php echo $_POST["book_date"], $_POST["start"];?></td>
-            <td><?php echo $_POST["bookdate"],$_POST["start"]; ?></td>
+            <td><?php echo $_POST["book_date"],$_POST["start"]; ?></td>
             <td><?php echo $_POST["type"];?></td>
             <td><?php echo $_POST["no_hp"];?></td>
             <?php 

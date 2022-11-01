@@ -20,10 +20,10 @@ $harga3 = 150000;
     <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" style="color:white" href="http://localhost:8090/MODUL2/Wihda_home.php#">Home</a>
+                <a class="nav-link" style="color:white" href="http://localhost:8090/MODUL2/debuging_m2/Wihda_home.php#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color:white" href="http://localhost:8090/MODUL2/Wihda_booking.php#">Booking</a>
+                <a class="nav-link" style="color:white" href="http://localhost:8090/MODUL2/debuging_m2/Wihda_booking.php#">Booking</a>
             </li>
         </ul>
     </nav>
@@ -65,7 +65,7 @@ $harga3 = 150000;
                 </div>
             </div>
             <div class ="column">
-                <div class="col" style="margin-right:100px">
+                <div class="card" style="margin-right:100px">
                     <img src="IMG_20180920_142230.jpg" style="padding-left:20px;width:300px" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">
