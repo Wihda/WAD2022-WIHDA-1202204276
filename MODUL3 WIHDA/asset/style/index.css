@@ -1,0 +1,17 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: small;
+    color: gray;
+}
+.mb-3{
+    max-width: 60%;
+    font-size: 14px;
+}
+.col-4{
+    padding-top:10%;
+}
+label{
+    font-weight: bold;
+}
