@@ -22,38 +22,38 @@
     </div>
     </nav>
     <br>
-    <form action="..\config\insert.php" method="post" style="margin-left:80px">  
+    <form action="../config/insert.php" method="post" enctype="multipart/form-data" style="margin-left:80px">  
         <h3>Tambah Mobil</h3>
         <p>Tambah Mobil Baru Anda Ke List Show Room</p><br>
         <div class="mb-3">
-            <label for="mobil" class="form-label">Nama Mobil</label>
+            <label for="Mobil" class="form-label">Nama Mobil</label>
             <input type="text" class="form-control" name="mobil">
         </div>
         <div class="mb-3">
-            <label for="pemilik" class="form-label">Nama Pemilik</label>
+            <label for="Pemilik" class="form-label">Nama Pemilik</label>
             <input type="text" class="form-control" name="milik">
         </div>
         <div class="mb-3">
-            <label for="merk" class="form-label">Merk</label>
+            <label for="Merk" class="form-label">Merk</label>
             <input type="text" class="form-control" name="merk">
         </div>
         <div class="mb-3">
-            <label for="tanggal" class="form-label">Tanggal Beli</label>
-            <input type="text" class="form-control" name="tanggal" placeholder="dd/mm/yyyy">
+            <label for="Tanggal" class="form-label">Tanggal Beli</label>
+            <input type="date" class="form-control" name="tanggal" placeholder="dd/mm/yyyy">
         </div>
         <div class="mb-3">
-            <label for="desc" class="form-label">Deskripsi</label>
+            <label for="Desc" class="form-label">Deskripsi</label>
             <textarea class="form-control" name="desc" rows="3"></textarea>
         </div>
         <div class="mb-3">
-            <label for="desc" class="form-label">Foto</label>
+            <label for="Foto" class="form-label">Foto</label>
         </div>
         <div class="mb-3">
             <label for="desc" class="form-label">Status Pembayaran</label><br>
 			<input type="radio" name="status" value="Lunas" style="margin-right:5px"><p1 style="margin-right:20px">Lunas</p1> 
             <input type="radio" name="status" value="Belum Lunas" style="margin-right:5px">Belum Lunas
         </div>
-        <button type="submit" name="selesai" class="btn btn-primary btn-sm" style="padding-left:25px; padding-right:25px">Selesai</button><br>
+        <input type="submit" name="selesai" value= "Selesai" class="btn btn-primary btn-sm" style="padding-left:25px; padding-right:25px"><br>
 </form>
 <br>    
 </body>
